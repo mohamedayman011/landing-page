@@ -4,7 +4,7 @@ A modern React landing page built with Vite. This project showcases a static mar
 
 ## Demo
 
-- [Live demo](https://www.github.com/octokatherine)
+- [Live demo](https://mohamedayman011.github.io/landing-page/)
 
 - [Design reference](https://www.figma.com/community/file/1222060007934600841)
 
