@@ -3,6 +3,7 @@
 A modern React landing page built with Vite. This project showcases a static marketing page with multiple sections, client logos, feature highlights, animated counters, blog-style cards, and a footer with newsletter signup.
 
 ## Demo
+
 - [Live demo](https://www.github.com/octokatherine)
 
 - [Design reference](https://www.figma.com/community/file/1222060007934600841)
