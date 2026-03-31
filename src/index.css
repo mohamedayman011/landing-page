@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+:root {
+    --black: #263238;
+    --d-grey: #4d4d4d;
+    --grey: #717171;
+    --L-grey: #89939e;
+    --grey-blue: #abbed1;
+    --sliver: #f5f7fa;
+    --white: #fff;
+    --primary: #28cb8b;
+    --secondary: #263238;
+    --info: #2194f3;
+    --shade1: #43a046;
+    --shade2: #388e3b;
+    --shade3: #237d31;
+    --shade4: #1b5e1f;
+    --shade5: #103e13;
+    --error: #e53835;
+    --tint-5: #e8f5e9;
+    --main-transition: all 0.3s;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    transition: var(--main-transition);
+}
+p {
+    color: var(--grey);
+}
+ul {
+    list-style: none;
+}
+img {
+    width: 100%;
+}
+button {
+    border: none;
+    outline: none;
+    transition: var(--main-transition);
+    cursor: pointer;
+    background-color: transparent;
+}
+button,
+a {
+    user-select: none;
+}
+button:active {
+    scale: 0.97;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    font-size: 1.6rem;
+}
+/* Button Template 1 */
+.btn-1 {
+    background-color: var(--primary);
+    color: var(--white);
+}
+.btn-1:active {
+    background-color: var(--shade2);
+}
+.btn-1:focus {
+    border: inside 2px solid var(--d-grey);
+}
+/* Button Template 2 */
+.btn-2 {
+    border: 1px solid var(--primary);
+    background-color: var(--white);
+    color: var(--primary);
+}
+.btn-2:active {
+    border: 1px solid transparent;
+    background-color: var(--sliver);
+}
+.btn-2:hover {
+    background-color: var(--sliver);
+}
+.btn-2:focus {
+    border: inside 2px solid var(--l-grey);
+}
+/* Button Template 3 */
+.btn-3 {
+    border: 1px solid var(--white);
+    background-color: var(--white);
+    color: var(--primary);
+}
+.btn-3:active {
+    border: 1px solid transparent;
+    background-color: var(--sliver);
+}
+.btn-3:hover {
+    background-color: var(--sliver);
+}
+.btn-3:focus {
+    border: inside 2px solid var(--d-grey);
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%; /* 10px */
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: var(--white);
+}
+/* Global Class */
+.title {
+    max-width: 55rem;
+    margin: 0 auto 1.5rem;
+    text-align: center;
+    font-size: 3.6rem;
+    color: var(--d-grey);
+}
+.subtitle {
+    max-width: 60rem;
+    font-size: 1.6rem;
+    text-align: center;
+    color: var(--grey);
+    margin: 0 auto 1rem;
+}
+/* Media Query */
+.container {
+    width: 120rem;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Mobile Screen  */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+}
+
+/* Mobile Screen  */
+@media only screen and (min-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}
+
+/* Tablet Screen  */
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* LabTop Screen  */
+@media only screen and (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* PC Screen */
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 1150px;
+    }
+}

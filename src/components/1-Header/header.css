@@ -1,0 +1,119 @@
+header {
+    padding: 2rem 0;
+}
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo img {
+    height: 2.4rem;
+}
+
+header .navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+header .navbar ul a {
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    color: var(--secondary);
+    transition: var(--main-transition);
+    position: relative;
+}
+
+header .navbar ul a:after {
+    position: absolute;
+    inset: 100% 0 0 0;
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: var(--primary);
+    transition: var(--main-transition);
+}
+
+header .navbar ul a:hover::after {
+    width: 100%;
+    color: #000;
+}
+
+header .login {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.btn-menu {
+    display: none;
+}
+.module {
+    z-index: 1000;
+    position: fixed;
+    inset: 0 0 0 0;
+    background: rgba(100, 100, 110, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.module-container {
+    width: 100%;
+    max-width: 50rem;
+    margin: 5rem auto;
+    background-color: var(--white);
+    padding: 2rem 3rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    animation: module 0.3s linear;
+}
+.module .close-menu {
+    margin-left: auto;
+    font-size: 1.8rem;
+}
+.module .close-menu:hover {
+    scale: 1.2;
+    color: var(--error);
+}
+.module nav li {
+    margin-bottom: 1rem;
+}
+.module nav a {
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    color: var(--secondary);
+    transition: var(--main-transition);
+}
+.module .signup {
+    align-self: center;
+}
+.module .signup button {
+    margin: 0 1rem;
+}
+
+@keyframes module {
+    0% {
+        scale: 0.5;
+    }
+    55% {
+        scale: 1.2;
+    }
+    100% {
+        scale: 1;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    header .navbar,
+    header .login {
+        display: none;
+    }
+    .btn-menu {
+        display: block;
+        border-radius: 50%;
+        line-height: 0;
+        padding: 1rem;
+        font-size: 1.8rem;
+    }
+}

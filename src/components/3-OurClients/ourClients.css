@@ -1,0 +1,38 @@
+.our-clients {
+    margin: 4rem 0;
+}
+.our-clients .carousal {
+    width: 100%;
+    max-width: 120rem;
+    margin: 5rem auto;
+    display: flex;
+    overflow-x: auto;
+    position: relative;
+}
+.our-clients .carousal::-webkit-scrollbar {
+    display: none;
+}
+.carousal .group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4.5rem;
+    padding-left: 4.5rem;
+    animation: spin 6s linear infinite;
+}
+.carousal:hover > .group {
+    animation-play-state: paused;
+}
+
+.carousal .group img {
+    width: 4.8rem;
+}
+
+@keyframes spin {
+    0% {
+        translate: 0;
+    }
+    100% {
+        translate: -100%;
+    }
+}

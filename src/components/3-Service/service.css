@@ -1,0 +1,157 @@
+.service {
+    margin: 4rem 0;
+}
+.service .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: calc((100% - 90rem) / 3);
+    flex-wrap: wrap;
+}
+.membership {
+    width: 100%;
+    flex: 0 0 30rem;
+    text-align: center;
+    padding: 2.4rem 3.2rem;
+    position: relative;
+}
+
+.membership h3 {
+    font-size: 2.8rem;
+    color: var(--d-grey);
+    margin-bottom: 1rem;
+}
+
+.membership p {
+    font-size: 1.4rem;
+    line-height: 1.2;
+}
+
+.membership img {
+    width: 4.8rem;
+    margin: 0 auto 1.6rem;
+}
+
+.shadow {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: var(--tint-5);
+    border-radius: 30% 0 30% 0;
+    inset: 25px 50% 50%;
+    z-index: -1;
+}
+
+.unlock {
+    padding-block: 1rem 4rem;
+}
+.unlock .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.unlock .text {
+    flex-basis: 50rem;
+}
+.unlock .text h3 {
+    font-size: 3.6rem;
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+}
+.unlock .text p {
+    font-size: 1.4rem;
+    margin-bottom: 3.2rem;
+    text-align: justify;
+}
+.unlock .text .btn-more {
+    padding: 1.4rem 3.2rem;
+    border-radius: 4px;
+}
+/* Achievements */
+.achievements {
+    padding: 6.4rem 0;
+    margin-bottom: 4rem;
+    background-color: var(--sliver);
+}
+.achievements .container {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+.achievements .heading h2 {
+    font-size: 3.6rem;
+    margin-bottom: 1.6rem;
+}
+.achievements .heading h2 span {
+    display: block;
+    color: var(--primary);
+}
+.achievements .heading p {
+    font-size: 1.4rem;
+}
+.achievements .counts {
+    flex-basis: 5.4rem;
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(25.5rem, 1fr));
+    gap: 4rem 3rem;
+}
+.achievements .counts .details {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+.achievements .counts .details .icon {
+    width: 4.8rem;
+}
+.achievements .counts .details .number h3 {
+    --font-size: 2.8rem;
+    font-size: var(--font-size);
+    color: var(--d-grey);
+    margin-bottom: 0.5rem;
+}
+.achievements .counts .details .number p {
+    font-size: 1.6rem;
+}
+@media only screen and (max-width: 768px) {
+    .unlock .container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .unlock .text {
+        text-align: center;
+    }
+    .achievements .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .achievements .heading {
+        text-align: center;
+    }
+    .achievements .counts {
+        margin: 0 auto;
+    }
+    .unlock .text {
+        flex-basis: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .achievements .counts {
+        grid-template-columns: repeat(2, minmax(1.5rem, 1fr));
+        gap: 2rem 1.5rem;
+    }
+    .achievements .counts .details {
+        gap: 1rem;
+    }
+    .achievements .counts .details .icon {
+        width: 3.2rem;
+    }
+    .achievements .counts .details .number h3 {
+        --font-size: 2rem;
+    }
+    .achievements .counts .details .number p {
+        font-size: 1.4rem;
+    }
+}

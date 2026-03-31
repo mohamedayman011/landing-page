@@ -1,0 +1,35 @@
+:root {
+    --line-height: 1.2;
+    --unite: calc(var(--font-size) * var(--line-height));
+}
+
+.odometer .counter {
+    display: flex;
+    text-align: center;
+    overflow-y: hidden;
+}
+.odometer .digit {
+    position: relative;
+    line-height: var(--line-height);
+    height: var(--unite);
+}
+.odometer .digit > div {
+    position: relative;
+    top: calc(var(--y) * var(--unite) * -1);
+    transition: var(--main-transition);
+}
+.start div {
+    animation: odometer 2s ease-out;
+}
+@keyframes odometer {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: calc(var(--y) * var(--unite) * -1);
+    }
+}
+
+* {
+    --unite: calc(var(--font-size) * var(--line-height));
+}
