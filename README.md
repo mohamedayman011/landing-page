@@ -68,41 +68,41 @@ npm run lint
 
 ```
 landing-page/
-??? public/
-??? src/
-?   ??? App.jsx
-?   ??? main.jsx
-?   ??? index.css
-?   ??? assets/
-?   ??? components/
-?       ??? 1-Header/
-?       ?   ??? Header.jsx
-?       ?   ??? header.css
-?       ??? 2-Hero/
-?       ?   ??? Hero.jsx
-?       ?   ??? hero.css
-?       ??? 3-OurClients/
-?       ?   ??? OurClients.jsx
-?       ?   ??? ourClients.css
-?       ??? 3-Service/
-?       ?   ??? Service.jsx
-?       ?   ??? service.css
-?       ??? 4-Customer/
-?       ?   ??? Customer.jsx
-?       ?   ??? customer.css
-?       ??? 5-Community/
-?       ?   ??? Community.jsx
-?       ?   ??? community.css
-?       ??? 6-Footer/
-?       ?   ??? Footer.jsx
-?       ?   ??? footer.css
-?       ??? Odometer/
-?           ??? Odometer.jsx
-?           ??? odometer.css
-??? package.json
-??? vite.config.js
-??? eslint.config.js
-??? README.md
+├── public/
+├── src/
+│   ├── App.jsx
+│   ├── main.jsx
+│   ├── index.css
+│   ├── assets/
+│   └── components/
+│       ├── 1-Header/
+│       │   ├── Header.jsx
+│       │   └── header.css
+│       ├── 2-Hero/
+│       │   ├── Hero.jsx
+│       │   └── hero.css
+│       ├── 3-OurClients/
+│       │   ├── OurClients.jsx
+│       │   └── ourClients.css
+│       ├── 3-Service/
+│       │   ├── Service.jsx
+│       │   └── service.css
+│       ├── 4-Customer/
+│       │   ├── Customer.jsx
+│       │   └── customer.css
+│       ├── 5-Community/
+│       │   ├── Community.jsx
+│       │   └── community.css
+│       ├── 6-Footer/
+│       │   ├── Footer.jsx
+│       │   └── footer.css
+│       └── Odometer/
+│           ├── Odometer.jsx
+│           └── odometer.css
+├── package.json
+├── vite.config.js
+├── eslint.config.js
+└── README.md
 ```
 
 ## Scripts
